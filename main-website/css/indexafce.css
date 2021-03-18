@@ -1,0 +1,114 @@
+.version.index {
+    color: #00001D;
+    background-color: #332F55;
+}
+
+#muse_css_mq {
+    background-color: #FFFFFF;
+}
+
+#page {
+    z-index: 1;
+    width: 1200px;
+    min-height: 438px;
+
+    bborder-width: 0px;
+    border-color: #000000;
+    background-color: transparent;
+    padding-bottom: 62px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#u249 {
+    z-index: 2;
+    width: 1400px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    position: relative;
+    margin-right: -10000px;
+    left: -100px;
+    background: transparent url("../images/pasted%20image%20130x308e38.png?crc=111604331") no-repeat left top;
+}
+
+#u172 {
+    z-index: 4;
+    width: 335px;
+    background-color: transparent;
+    position: relative;
+    margin-right: -10000px;
+    margin-top: 91px;
+    left: 433px;
+}
+
+#u184 {
+    z-index: 6;
+    width: 26px;
+    background-color: transparent;
+    position: relative;
+    margin-right: -10000px;
+    margin-top: 689px;
+    left: 653px;
+}
+
+#u182 {
+    z-index: 7;
+    display: block;
+}
+
+#u194 {
+    z-index: 8;
+    width: 13px;
+    background-color: transparent;
+    position: relative;
+    margin-right: -10000px;
+    margin-top: 689px;
+    left: 610px;
+}
+
+#u192 {
+    z-index: 9;
+    display: block;
+}
+
+#u214 {
+    z-index: 10;
+    width: 114px;
+    background-color: transparent;
+    position: relative;
+    margin-right: -10000px;
+    margin-top: 689px;
+    left: 467px;
+}
+
+#u212 {
+    z-index: 11;
+    display: block;
+}
+
+#u269 {
+    z-index: 12;
+    width: 25px;
+    background-color: transparent;
+    position: relative;
+    margin-right: -10000px;
+    margin-top: 691px;
+    left: 708px;
+}
+
+.html {
+    background-color: #03030A;
+}
+
+body {
+    position: relative;
+    min-width: 1200px;
+}
+
+html {
+    background: url(../images/kelle-bg.gif) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
