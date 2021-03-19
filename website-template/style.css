@@ -53,8 +53,8 @@ body {
     top: 0;
     left: 0;
     background-color: #000000;
-    z-index:1;
-    opacity: 0.80;
+    z-index: 1;
+    opacity: 0.75;
 }
 
 .header-content {
@@ -79,7 +79,7 @@ body {
     text-decoration: none;
 }
 
-@media(max-width:960px) {
+@media (max-width: 960px) {
     .container {
         padding-right: 3rem;
         padding-left: 3rem;
@@ -99,7 +99,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     transition: 0.4s;
 }
@@ -129,8 +129,8 @@ body {
 
 .card:hover {
     transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
 .title-white {
@@ -154,7 +154,55 @@ body {
     grid-template-columns: auto auto auto;
     padding: 10px;
 }
+
 .grid-item {
     padding: 50px;
     text-align: center;
+}
+
+.custom-vote-btn {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 35px;
+    width: 70px;
+}
+
+.custom-vote-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.kk-image {
+    z-index: 2;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@import url(//use.fontawesome.com/releases/v5.13.0/css/all.css);
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+button {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: .5rem;
+    border-radius: .75rem;
+    background: #000;
+    color: #fff;
+    border-width: .1rem;
+    border-style: solid;
+    border-color: #000;
+    cursor: pointer;
+}
+
+button.a3 {
+    font-family: 'Permanent Marker', cursive;
+    background-color: white;
+    border-color: transparent;
+    color: #000;
+    outline: none;
+}
+
+button.a3:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fafaff;
 }
