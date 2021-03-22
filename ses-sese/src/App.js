@@ -1,24 +1,47 @@
 import React from "react"
 import "./index.css"
-import fire from "./fire"
+
 
 class App extends React.Component {
     constructor() {
         super();
-        this.state = {}
+        this.state = {
+            ip: "",
+            isVoted: false,
+            votedFor: ""
+        }
         this.buttonHandle = this.buttonHandle.bind(this)
     }
 
     buttonHandle(event) {
         event.preventDefault()
-        if (event.target.id === "paster") {
-            fire.database().ref('paster').push(1);
-        } else {
-            fire.database().ref('ruzgar').push(1);
-        }
 
-        console.log(event.target.id)
+        fetch('https://www.cloudflare.com/cdn-cgi/trace').then(res => res.text()).then(data => {
+            let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
+            let ip = data.match(ipRegex)[0];
+            this.setState({
+                ip: ip,
+                votedFor: event.target.id
+            })
+
+            if (event.target.id === "ruzgar") {
+                this.setState({
+                    votedFor: "ruzgar"
+                })
+            } else {
+                this.setState({
+                    votedFor: "paster"
+                })
+            }
+
+            fetch(`https://ses-sese-api.herokuapp.com/add/${process.env.REACT_APP_API_KEY}=${this.state.ip}=${this.state.votedFor}`).then(res => res.text()).then(data => {
+                console.log(data);
+            });
+
+
+        });
     }
+
 
     render() {
         return (
